@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анімація</title>
+    <style>
+        body {
+            background: url('Backgrnd.gif') repeat;
+        }
+
+        h1 {
+            color: green;
+            background-color: burlywood;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Зміна зображення через задані проміжки часу</h1>
+    <img id="animatedImage" height="540" src="photo1.gif" width="550">
+
+    <script>
+        var al = 0;
+
+        function podmen() {
+            var image = document.getElementById('animatedImage');
+            var imagePath = image.src;
+            var lastSlash = imagePath.lastIndexOf("/");
+            var path = imagePath.substring(0, lastSlash + 1);
+
+            if (al === 0) {
+                image.src = path + "photo2.jpg";
+                al = 1;
+            } else {
+                image.src = path + "photo1.gif";
+                al = 0;
+            }
+
+            setTimeout(podmen, 2000);
+        }
+
+        setTimeout(podmen, 2000);
+    </script>
+</body>
+
+</html>

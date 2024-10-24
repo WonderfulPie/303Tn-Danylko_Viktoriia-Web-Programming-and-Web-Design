@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відкриття та закриття вікна</title>
+</head>
+
+<body>
+
+    <input onclick="openWindow()" type="button" value="Викликаємо метод open"><br><br>
+    <input onclick="closeWindow()" type="button" value="Зачинемо вікно"><br>
+
+    <script>
+        let pr1; // Глобальна змінна для збереження посилання на вікно
+
+        function openWindow() {
+            pr1 = window.open('DanylkoLab10-3.html', 'pr1', 'width=200, height=150');
+        }
+
+        function closeWindow() {
+            if (pr1) {
+                pr1.close();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

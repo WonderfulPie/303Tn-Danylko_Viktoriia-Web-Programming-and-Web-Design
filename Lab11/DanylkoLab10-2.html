@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відображення дати створення</title>
+</head>
+
+<body>
+    <p>Дата створення документа: <span id="creationDate"></span></p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Отримуємо поточну дату та час
+            var currentDate = new Date();
+
+            // Отримуємо частини дати (день, місяць, рік) та часу
+            var day = currentDate.getDate();
+            var month = currentDate.getMonth() + 1; // Місяці в JavaScript починаються з 0
+            var year = currentDate.getFullYear();
+            var hours = currentDate.getHours();
+            var minutes = currentDate.getMinutes();
+            var seconds = currentDate.getSeconds();
+
+            // Форматуємо дату у зручний вигляд (наприклад, "дд.мм.рррр гг:хх:сс")
+            var formattedDate = `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
+
+            // Знаходимо елемент з ідентифікатором "creationDate" і вставляємо в нього дату
+            var creationDateElement = document.getElementById("creationDate");
+            creationDateElement.textContent = formattedDate;
+        });
+    </script>
+</body>
+
+</html>

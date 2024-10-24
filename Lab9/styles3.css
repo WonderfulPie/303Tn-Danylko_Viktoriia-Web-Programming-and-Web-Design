@@ -1,0 +1,14 @@
+/* Клас для елементів меню */
+.menu {
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+/* Клас для невеликих повідомлень */
+.small {
+    font-size: 12px;
+    color: darkgrey;
+    text-align: right;
+}

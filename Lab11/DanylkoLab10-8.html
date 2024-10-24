@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Показати день тижня</title>
+</head>
+
+<body>
+
+    <script>
+        var d = new Date();
+        var daysOfWeek = ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота'];
+    var dayOfWeek = daysOfWeek[d.getDay()];
+
+        document.write('Сьогодні: ' + dayOfWeek);
+    </script>
+
+</body>
+
+</html>

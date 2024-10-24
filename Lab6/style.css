@@ -1,0 +1,33 @@
+.menu{
+	border: 1px solid #ffffff;
+    display: table-cell;
+	background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 50px;
+    font-size: 20px;
+}
+.p { 
+	    display: table-cell;
+        font-size: 24pt;
+}
+.pp{
+	display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+}
+.pp li {
+    color: black;
+    padding: 12px 16px;
+
+    display: block;
+}
+
+.pp li:hover {
+	background-color: #ddd;
+}
+ul:hover .pp {
+    display: block;
+}
+ul:hover ul {
+    background-color: #8e3e8e;
+}

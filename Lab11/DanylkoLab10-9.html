@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Збільшення малюнка</title>
+</head>
+
+<body>
+
+    <img src="haretiger.jpg" name='hare' width=150 height=160 border=1 alt="Заєць">
+    <br>
+    <input type="button" value="Збільшимо рисунок" onclick="zbylshytyMalyunok()">
+
+    <script>
+        function zbylshytyMalyunok() {
+            var malyunok = document.images['hare'];
+            malyunok.width = 850;
+            malyunok.height = 510;
+            malyunok.alt = 'Ні, це тигр';
+            malyunok.border = 4;
+        }
+    </script>
+
+</body>
+
+</html>

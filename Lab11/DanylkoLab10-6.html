@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метод prompt()</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td align="middle">
+                <input onclick="getUserName()" type="button" value="Викличемо метод prompt"><br>
+                <input onclick="displayUserName()" type="button" value="Переглянемо введену інформацію"><br>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        let userName; // Глобальна змінна для зберігання імені
+
+        function getUserName() {
+            userName = prompt('Введіть ваше ім\'я:');
+        }
+
+        function displayUserName() {
+            if (userName) {
+                alert('Введене ім\'я: ' + userName);
+            } else {
+                alert('Ім\'я не було введено.');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

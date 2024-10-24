@@ -1,0 +1,23 @@
+/* "Червоний рядок" на початку абзаців */
+p {
+    text-indent: 20px;
+    text-align: justify; /* Вирівнювання по ширині */
+    margin-left: 10px;   /* Відступи ліворуч */
+    margin-right: 10px;  /* Відступи праворуч */
+    margin-bottom: 10px; /* Зменшений інтервал між абзацами */
+}
+
+/* Налаштування для посилань */
+a:link {
+    color: blue;         /* Не відвідані посилання */
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;       /* Відвідані посилання */
+}
+
+a:hover {
+    color: red;          /* Активні посилання */
+    text-decoration: underline;
+}
