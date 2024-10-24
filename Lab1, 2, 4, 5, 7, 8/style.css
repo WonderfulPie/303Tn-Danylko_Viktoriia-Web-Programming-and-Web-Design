@@ -1,0 +1,118 @@
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body#index {
+    background-image: url(image/background_index.jpg);
+}
+
+body#Poltava {
+    background-image: url(image/background_Poltava.jpg);
+}
+
+body#regist {
+    background-image: url(image/background_Register.jpg);
+}
+
+header {
+    margin: 0 auto;
+        background: rgb(0, 0, 0);
+        color: #ea1414;
+        overflow: visible;
+        padding: 2rem;
+    font-size: 18px;
+}
+
+main {
+    margin: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 150px;
+    background: rgba(255, 255, 255, 0.462);
+    padding: 1rem;
+
+}
+
+footer {
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    overflow: visible;
+    padding: 1rem;
+}
+
+.forms {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(218, 51, 79);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(247, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.title{
+color: pink;
+    background-color: transparent;
+    text-decoration: none;
+
+}
+.menu{
+	border: 1px solid #9400D3;
+    display: table-cell;
+	background-color: #9400D3;
+    color: white;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+.p { 
+	    display: table-cell;
+}
+.pp{
+	display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+}
+.pp li {
+    color: black;
+    padding: 12px 16px;
+
+    display: block;
+}
+
+.pp li:hover {
+	background-color: #ddd;
+	}
+
+ul:hover .pp {
+	display: block;
+	}
+ul:hover ul {
+	background-color: #8e3e8e;}
